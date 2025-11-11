@@ -4,16 +4,34 @@ FN7 SDK for Python provides Firebase operations with security rules enforcement 
 
 ## Installation
 
-### From Private PyPI (Production)
+### Using pip (Simple PyPI Index - Recommended)
 
 ```bash
-pip install --index-url https://your-private-pypi.com/simple fn7-sdk
+pip install fn7-sdk --index-url https://fn7.io/.fn7-sdk/python/
+```
+
+### Direct Download (Latest Version)
+
+```bash
+# Download wheel file
+wget https://fn7.io/.fn7-sdk/python/latest/fn7_sdk-*-py3-none-any.whl
+
+# Install locally
+pip install fn7_sdk-*-py3-none-any.whl
+```
+
+### Direct Download (Specific Version)
+
+```bash
+# Replace VERSION with desired version (e.g., 1.0.0)
+wget https://fn7.io/.fn7-sdk/python/vVERSION/fn7_sdk-VERSION-py3-none-any.whl
+pip install fn7_sdk-VERSION-py3-none-any.whl
 ```
 
 ### Local Development
 
 ```bash
-cd ui/app/libs/fn7-sdk-python
+cd packages/python
 pip install -e .
 ```
 
